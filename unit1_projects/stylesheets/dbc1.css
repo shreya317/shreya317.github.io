@@ -1,7 +1,8 @@
+
 p {
-  background: yellow;
   font-size: 14px;
 }
 h1 {
 	background: blue;
+	font-color: white;
 }
