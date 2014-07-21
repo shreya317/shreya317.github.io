@@ -1,7 +1,13 @@
+body {background-color: #b0c4de;}
 
-p {
-  font-size: 14px;
-}
-h1 {
-	background: blue;
-}
+#MyTitle {text-align: center;
+	color: white;
+	font-family: Arial;
+	}
+
+.MyList {color: black;
+	font-family: Arial;
+	}
+
+ul {color:red;}
+
