@@ -36,7 +36,10 @@ a {text-decoration: none;
 	text-align: center;
 	color: white;
 	}
-
+/* mouse over link */
+a:hover {
+	color: #1a1935;
+	}
 
 .blogbase {
 	background: #efedda;
