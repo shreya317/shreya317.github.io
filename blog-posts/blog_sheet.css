@@ -25,17 +25,16 @@ ul {
 	font-family: helvetica;
 	margin: 0px;
 	padding: 5px;
-	padding-left: 565px;
+	padding-left: 270px;
 	}
 
 li {float: left;}
 
 a {text-decoration: none;
 	display: block;
-	width: 70px;
+	width: 200px;
 	text-align: center;
 	color: white;
-	text-align: center;
 	}
 
 
@@ -85,4 +84,5 @@ article {font-family: helvetica;}
 		width: 100%;
 		color: #fc5938;
 		font-family: helvetica;
-		text-align: center}
+		text-align: center
+	}
