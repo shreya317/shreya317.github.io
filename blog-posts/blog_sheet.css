@@ -79,3 +79,10 @@ a {text-decoration: none;
 }
 
 article {font-family: helvetica;}
+
+#footer {
+		background: #1a1935;
+		width: 100%;
+		color: #fc5938;
+		font-family: helvetica;
+		text-align: center}
