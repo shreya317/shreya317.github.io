@@ -95,6 +95,8 @@ article {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin: auto;
+	text-align: center;
+	font-size: 20px;
 }
 
 article h2, h4, a {padding-left: 15px;}

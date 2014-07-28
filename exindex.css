@@ -4,7 +4,7 @@ html{
 }
 
 body {
-	background-image:  url('blog_images/escheresque.png');
+	background-image:  url('blog-posts/blog_images/escheresque.png');
 	font-family: Ubuntu;
 	font-weight: 400;
 	margin: auto;}
@@ -36,13 +36,8 @@ nav p {
 	font-size: 30px;
 	text-align: center;}
 
-.navhome {
-	width: 400px;
-	background-color: #fc5938;
-	margin: auto;
-}
-
 .navabout {
+	
 	width: 400px;
 	background-color: #fc5938;
 	margin: auto;
@@ -51,6 +46,12 @@ nav p {
 	width: 400px;
 	background-color: #fc5938;
 	margin: auto;}
+
+.navprojects {
+	width: 400px;
+	background-color: #fc5938;
+	margin: auto;
+}
 
 .navhbn {
 	width: 400px;
@@ -69,58 +70,15 @@ nav a {
 
 nav a:hover {
 	color: #1a1935;
-}
-
-/*Featured Section*/
-.blogbox {
-	
-	margin: auto;
-	}		
-
-/*Appies to links wihthin the post*/	
-.blogbox a {
-	text-decoration: none;
-	color: #1a1935;}
-
-.blogbox a:hover {color: #fc5938;}
-
-img {float: left;
-	padding: 20px;}
-
-
-article {
-	position: relative;
-	top: 15px;
-	background-color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: auto;
-}
-
-article h2, h4, a {padding-left: 15px;}
-
-article a, p {padding: 15px;}
-
-.recent {
-	position: relative;
-	top: 40px;
-	background-color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin: auto;
-}
-
-.recent a:hover {color: #fc5938}
-.recent a {text-decoration: none;
-			color: #1a1935}
-
+	}
 
 /*Footer*/
+
 footer {
 	width: 100%;
 	height: 20px;
 	text-align: center;
-	color: #fc5938;
+	color: black;
 	position: relative;
-	top: 20px;
+	top: 200px;
 }
