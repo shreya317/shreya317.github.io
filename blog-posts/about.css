@@ -103,6 +103,9 @@ article h2, h4, a {padding-left: 15px;}
 
 article a, p {padding: 15px;}
 
+article h2 a {list-style: none;
+text-decoration: none;}
+
 .recent {
 	position: relative;
 	top: 40px;
