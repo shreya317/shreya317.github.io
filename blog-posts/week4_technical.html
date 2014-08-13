@@ -156,11 +156,104 @@
 
 		<h3>Hashes</h3>
 		<h4>Definition</h4>
+		<ul>
+			<li>A hash is a collection of key-value pairs.</li>
+				<ul>
+					<li>Example: { “Jack” => “turtle, “Thomas” => cat, “Scruffy” => dog, “Tiny” => “hamster”}</li>
+				</ul>
+			<li>They are similar to arrays, but instead of integer indexes, you use the keys to index.</li>
+			<li>You can use any Ruby object as key or value, even an array.</li>
+				<ul>
+					<li>Example: {[1, “jan”] => “January"} </li>
+				</ul>
+			<li>Hash values don’t have to be unique, you can assign the same value two or more keys</li>
+			<li>You can't have duplicate keys</li>
+		</ul>
 		<h4>Accessing Values</h4>
+		<ul>
+			<li>You can assign a variable name to a hash and access its values by calling the hash key, like so</li>
+				<ul>
+					<li>pet_type = { “Jack” => “turtle, “Thomas” => cat, “Scruffy” => dog, 				“Tiny” => “hamster”}</li>
+					<li>pet_type["Jack"] #=> turtle</li>
+					<li>pet_type["Thomas"] #=> cat</li>
+					<li>pet_type["Scruffy"] #=> dog</li>
+					<li>pet_type["Tiny"] #=> hamster</li>
+				</ul>
+		</ul>
+
 		<h4>Creating Hahes</h4>
+		<ul>
+			<li>You can create hashes multiple ways, the simplest way is to assign an empty set of curly braces to a variable (hash literal)</li>
+				<ul>
+					<li>pet_type = { }</li>
+				</ul>
+			<li>You can also create a hash  using the new class method</li>
+				<ul>
+					<li>pet_type = Hash.new</li>
+				</ul>
+		</ul>
+
 		<h4>Adding & Removing </h4>
+		<ul>
+			<li>To add a new key,value pair, use the [ ] = method </li>
+				<ul>
+					<li>pet_type = { “Jack” => “turtle, “Thomas” => cat, “Scruffy” => dog, 				“Tiny” => “hamster”}</li>
+					<li>pet_type[“Fluffy”] = “bunny”</li>
+					<li>#=> { “Jack” => “turtle, “Thomas” => cat, “Scruffy” => dog, “Tiny” => “hamster”, “Fluffy” => “bunny”}</li>
+				</ul>	
+
+			<li>To remove key, value pair, use delete method followed by the key</li>
+				<ul>
+					<li>pet_type = { “Jack” => “turtle, “Thomas” => cat, “Scruffy” => dog, 				“Tiny” => “hamster”}</li>
+					<li>pet_type.delete(Jack)</li>
+					<li>#=> {“Thomas” => cat, “Scruffy” => dog, “Tiny” => “hamster”, “Fluffy” => “bunny”}</li>
+				</ul>
+		</ul>
+
 		<h4>Iterating</h4>
+		<ul>
+			<li>You can iterate over a hash using the each method</li>
+				<ul>
+					<li>pet_type = {"Jack" => "turtle", "Thomas" => "cat", "Scruffy" => "dog", "Tiny" => "hamster"}</li>
+					<li>pet_type.each {|key, value| puts "#{key} is my #{value}."}</li>
+					<li>#=> Jack is my turtle.</li>
+					<li>Thomas is my cat/</li>
+					<li>Scruffy is my dog.</li>
+					<li>Tiny is my hamster.</li>
+				</ul>
+		</ul>
+
 		<h4>What are they good for?</h4>
+		<ul>
+			<li>It’s good to use hashes to keep track of things that don’t fit in an ordered list. Hashes let you perform lookup operations based on keys. </li>
+		</ul>
+
+		<h3>When to use what...</h3>
+		<p>If I wanted a list of all the names in my phonebook then I could use an array to store the list of names.</p>
+		<ul> 
+			<li> phonebook = ["Jack", "Alex", "Sam", "Brian", "Kelly"] </li> 
+		</ul>
+		<p>I could alphabetize the list by using the sort method,</p>
+		<ul> 
+			<li> phonebook.sort</li>
+			<li> #=> [“Alex”, “Brian”, “Jack”, “Kelly”, “Sam”]</li> 
+		</ul>
+
+		<p>If I wanted all the entries in the phonebook with name and corresponding phone number, I would use a hash to store the entries.</p>
+		<ul> 
+			<li> phonebook = {“Jack” => 1111111, “Alex” => 2222222, “Sam” => 3333333, “Brian” => 4444444, “Kelly” => 5555555 </li> 
+		</ul>
+
+		<p>If I wanted Sam’s phone number, I would get this information by calling the key.</p>
+		<ul> 
+			<li> phonebook["Sam"]</li>
+			<li> #=> 3333333</li> 
+		</ul>
+
+
+
+		
+
 
 	</article>
 </section>
