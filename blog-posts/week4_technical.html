@@ -31,9 +31,137 @@
 		<h2>Ruby: Arrays and Hashes</h2>
 		<h4>By Shreya Patel</h4>
 		<h4 class="date">August 7th, 2014</h4>
-		
+		<h3>Arrays</h3>
+		<h4>Definition:</h4>
+		<ul>
+			<li>An array is a list of items in order</li>
+			<li>An array can contain any type of legitimate Ruby object</li>
+			<li>Every slot in the list acts like a variable</li>
+				<ul>
+					<li>You can see what object a particular slot points to</li>
+					<li>You can make it point to different object</li>
+					<li>Example:</li>
+						<ul>
+							<li> [ ]  #empty array</li>
+							<li> [1] #array holding a single number</li>
+							<li> [“Ruby”, “DBC”] #array holding two strings</li>
+							<li> name = “Shreya” #assignment</li>
+							<li> [2.1, name, [“yes”, 1] ] #array holding three objects; float, string, and array.</li>
+						</ul>
+
+				</ul>
+
+		</ul>
 			
-		
+		<h4>Integer & Zero Indexed</h4>
+		<ul>
+			<li> To help us find a particular object in an array, each slot is given an index number</li>
+			<li>The first slot in the array is always indexed number zero, the second is indexed number 1, third is indexed number 2, and so forth.</li>
+		</ul>
+
+		<h4>Accessing Values</h4>
+		<ul>
+			<li>You can store arrays into variable names and access the values by calling the index number</li>
+			<li>Example: languages = [ “Ruby”, “JavaScript”, “HTML”, “CSS” ] </li>
+				<ul>
+					<li>puts languages[0] 	#=> Ruby</li>
+					<li>puts languages [1]	#=> JavaScript</li>
+					<li>puts languages [2]	#=> HTML</li>
+					<li>puts languages[3]	#=> CSS</li>
+
+					<li>puts languages		#=>Ruby
+				          						JavaScript
+				          						HTML
+				          						CSS</li>
+				</ul>
+		</ul>
+
+		<h4>Creating Arrays</h4>
+		<ul>
+			<li>You can create arrays multiple ways, the simplest way is to assign an empty set of square brackets to a variable (array literal) </li>
+				<ul>
+					<li>a = [ ]</li>
+				</ul>
+			<li>You can also create an array using the “new” method of the Array class</li>
+				<ul>
+					<li>a = Array.new</li>
+				</ul>	
+		</ul>	
+
+		<h4>Adding and Removing Items</h4>
+		<ul>
+			<li>To add an item to an array at the end, use the push method</li>
+				<ul>
+					<li>pets = ["cat", "dog"]</li>
+					<li>pets.push("hamster")</li>
+					<li>#=> pets = ["cat", "dog", "hamster"]</li>
+				</ul>
+			<li>To add an item to the beginning of the array, use the unshift method.</li>
+				<ul>
+					<li>pets.unshift(“turtle”)</li>
+					<li>#=> pets = [“turtle”, “cat”, “dog”, “hamster”]</li>
+				</ul>
+			<li>To remove the last item of an array, use the pop method. This will remove and return the value of that item</li>
+				<ul>
+					<li>pets.pop</li>
+					<li>#=> hamster</li>
+				</ul>
+			<li>To remove the first item of an array, use the shift method</li>
+				<ul>
+					<li>pets.shift</li>
+					<li>#=> turtle</li>
+				</ul>
+		</ul>
+
+
+		<h4>Using other bulit-in methods</h4>
+		<ul>
+			<li>To get the length of an array, use the length method</li>
+				<ul>
+					<li>pets = [“turtle”, “cat”, “dog”, “hamster”]</li>
+					<li>pets.length</li>
+					<li>#=> 4</li>
+				</ul>
+			<li>To find out what the first item of the array is, use the first method</li>
+				<ul>
+					<li>pet.first</li>
+					<li>#=> turtle</li>
+				</ul>
+			<li>To find out what the last item of the array is, use the last method</li>
+					<ul>
+					<li>pet.last</li>
+					<li>#=> hamster</li>
+				</ul>
+		</ul>
+
+		<h4>Iterating</h4>
+		<ul>
+			<li>You can iterate through an array using the each method. This allows us to execute a block of code to each item within the array</li>
+				<ul>
+					<li>pets = [“turtle”, “cat”, “dog”, “hamster”]</li>
+					<li>pets.each { |animal| puts “I love my “ + animal + “.”}</li>
+					<li># The code between curly braces is what we will do to each item in the array</li>
+					<li># |animal| is the variable that each will use to point to the objects in the array</li>
+					<li>#=> I love my turtle.</li>
+					<li>#=> I love my cat.</li>
+					<li>#=> I love my dog.</li>
+					<li>#=> I love my cat.</li>
+				</ul>
+		</ul>
+
+		<h4>What are they good for?</h4>
+		<ul>
+			<li>Arrays are good to keep track of list of strings, to store references to items you are working with, and to iterate through groups of objects in a sequence.</li>
+		</ul>
+
+		<h3>Hashes</h3>
+		<h4>Definition</h4>
+		<h4>Accessing Values</h4>
+		<h4>Creating Hahes</h4>
+		<h4>Adding & Removing </h4>
+		<h4>Iterating</h4>
+		<h4>What are they good for?</h4>
+
 	</article>
 </section>
 </div>
