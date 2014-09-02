@@ -8,7 +8,7 @@ html {
 body {
 	background-image:  url('blog_images/escheresque.png');
 	font-family: Ubuntu;
-	font-weight: 400;
+	font-weight: 400;g
 	margin: auto;}
 
 /*Header*/
@@ -98,6 +98,8 @@ body {
 article {padding: 20px;}
 
 	article h2 {color: #fc5938;}
+
+	article a {text-decoration: none;}
 
 
 
