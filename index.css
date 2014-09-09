@@ -9,7 +9,8 @@ body {
 	background-image:  url('blog-posts/blog_images/escheresque.png');
 	font-family: Ubuntu;
 	font-weight: 400;
-	margin: auto;}
+	margin: auto;
+	}
 
 /*Header*/
 
@@ -242,9 +243,9 @@ footer {
 }
 
 .section3 h3 {color: #fc5938;}
-.section3 p {color: #fff;}
+.section3 p {color: #EFEDDA;}
 .section3 p a { 
- 	color: #fff;
+ 	color: #EFEDDA;
  }
 
 /*  COLUMN SETUP  */
