@@ -201,9 +201,9 @@ footer {
 
 .bottom-nav a {
 	text-decoration: none;
-	color: #fc5938;
+	color: #fff;
 }
 
 	.bottom-nav a:hover {
-		color: #fff;
+		color: #fc5938;
 	}
